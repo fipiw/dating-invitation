@@ -10,7 +10,7 @@ function moveButton() {
 function nextPage() {
     let name = prompt("Masukkan nama Anda:"); // Meminta input dari pengguna
     if (name) {
-        fetch("https://script.google.com/macros/s/AKfycbxeAvHI2Ldcsk9D-eNOsJNZyzrlvwvDRn_pxRWVEOt0m5HLUy9us8iP2hIFvybN4GGsuA/exec?name=" + encodeURIComponent(name))
+        fetch("https://script.google.com/macros/s/AKfycbyXEGnuM2GvSw4xwSBMgjPLS3kHthgCPtRlCDH3H35LkSEG7seb0vTzbMurDsylqid5vQ/exec" + encodeURIComponent(name))
             .then(response => response.text()) // Mengubah response ke teks
             .then(data => {
                 console.log("Response dari server:", data);

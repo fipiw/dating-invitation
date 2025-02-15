@@ -10,7 +10,7 @@ function moveButton() {
 
 function nextPage() {
     let name = prompt("Masukkan nama Anda:");
-    fetch("https://script.google.com/macros/s/AKfycbxeAvHI2Ldcsk9D-eNOsJNZyzrlvwvDRn_pxRWVEOt0m5HLUy9us8iP2hIFvybN4GGsuA/exec" + encodeURIComponent(name))
+    fetch("https://script.google.com/macros/s/AKfycbxeAvHI2Ldcsk9D-eNOsJNZyzrlvwvDRn_pxRWVEOt0m5HLUy9us8iP2hIFvybN4GGsuA/exec" + encodeURIComponent(Sheet1))
         .then(response => console.log("Data terkirim!"))
         .catch(error => console.error("Gagal mengirim data:", error));
     

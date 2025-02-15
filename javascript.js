@@ -9,5 +9,10 @@ function moveButton() {
 }
 
 function nextPage() {
+    let name = prompt("Masukkan nama Anda:");
+    fetch("https://script.google.com/macros/s/AKfycbzh-aRLCxx-X-l7NsCkDfKq_63DtY3vHbG1id0-mXdFH-G0H0KT3y1f0AZ-zErxFwx2ig/exec" + encodeURIComponent(name))
+        .then(response => console.log("Data terkirim!"))
+        .catch(error => console.error("Gagal mengirim data:", error));
+    
     window.location.href = "yes.html"; // Gantilah dengan halaman yang Anda inginkan
 }

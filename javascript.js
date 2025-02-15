@@ -15,11 +15,9 @@ function nextPage() {
             .then(data => {
                 console.log("Response dari server:", data);
                 alert("Data berhasil dikirim!"); // Notifikasi ke pengguna
-                window.location.href = "thankyou.html"; // Arahkan ke halaman lain setelah klik "Yes"
+                window.location.href = "yes.html"; // Arahkan ke halaman lain setelah klik "Yes"
             })
             .catch(error => console.error("Gagal mengirim data:", error));
-
-         window.location.href = "yes.html"; // Gantilah dengan halaman yang Anda inginkan
     }
 }
 function doGet(e) {

@@ -16,7 +16,7 @@ function nextPage() {
                 console.log("Response dari server:", data);
                 alert("Data berhasil dikirim!"); // Notifikasi ke pengguna
                 
-            window.location.href = "yes.html"; // Arahkan ke halaman lain setelah klik "Yes"
+        window.location.href = "yes.html"; // Arahkan ke halaman lain setelah klik "Yes"
             })
             .catch(error => console.error("Gagal mengirim data:", error));
     }
